@@ -91,7 +91,7 @@ section.mid-container {
     background: black;
     opacity: 0.9999999;
 }
-button{
+.mid-container button{
     padding: 12px 55px;
     border-radius: 4px;
     border: 2px solid #ffc451;
@@ -136,7 +136,7 @@ section h1{
     margin-left: 12%;
     margin-right: 12%;
 }
-.counts .row{
+.counts .row-sec{
     display: grid;
     grid-template-columns: repeat(2, auto);
 }
@@ -189,7 +189,7 @@ section.about{
     padding: 60px 0;
     overflow: hidden;
 }
-.main .row{
+.main .row-sec{
     display: inline-flex;
     justify-content: center;
 }
@@ -214,4 +214,199 @@ section.about{
 }
 .main button{
     padding: 7px 25px 8px 25px;
+    border-radius: 4px;
+    border: 2px solid #ffc451;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+}
+.main button:hover{
+    color: black;
+    background-color: #ffc451;
+    transition: all 0.4s;
+}
+
+/* footer */
+
+#footer {
+    background: black;
+    padding: 0 0 0 0;
+    color: #fff;
+    font-size: 14px;
+}
+.footer-top .row-sec{
+    display: flex;
+    justify-content: center;
+}
+.footer-top .form{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.footer-top h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+#footer .footer-top {
+    background: #000917;
+    border-bottom: 1px solid #000917;
+    padding: 60px 0 30px 0;
+}
+.footer-top .input-row{
+    width: 360px;
+    height: 50px;
+}
+.footer-top button {
+    padding: 10px 25px;
+    border-radius: 4px;
+    border: 2px solid #ffc451;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.footer-top .link{
+    margin-bottom: 30px;
+    width: 30%;
+}
+.footer-top .link ul{
+    margin: 0;
+    padding: 0;
+}
+.footer-top .link ul li{
+    list-style: none;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.footer-top .link ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.footer-top .link ul li a:hover{
+    color: #ffc451;
+    transition: all 0.5s;
+}
+.footer-top ul li .iconify {
+    padding-right: 2px;
+    font-size: 18px;
+    line-height: 1;
+}
+.contact-info {
+    width: 18%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#footer .footer-top .footer-info {
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+#footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+#footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #292929;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    transition: 0.3s;
+}
+#footer .footer-top .social-links a:hover {
+    background-color: #ffc451;
+    color: black;
+}
+#footer .footer-bottom{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+}
+a.back-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: #ffc451;
+    color: #151515;
+    transition: all 0.4s;
+}
+a.back-to-top:hover {
+    background: #292929;
+    color: #ffc451;
+}
+
+/* FAQ */
+
+.faq {
+    padding: 60px 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.faq-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 77%;
+}
+ul.faq-list {
+    padding: 0;
+}
+.section-title {
+    padding-bottom: 40px;
+}
+.section-title h3{
+    color: #444444;
+}
+.faq .faq-list li {
+    list-style: none;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.faq .faq-list a{
+    text-decoration: none;
+    display: block;
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-right: 25px;
+    cursor: pointer;
+    padding-bottom: 20px;
+    color: #444444;
+}
+.faq .faq-list li ul li {
+    list-style: circle;
+}
+.faq .faq-list .iconify {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.faq .faq-list a.collapsed:hover {
+    color: #e03a3c;
 }
